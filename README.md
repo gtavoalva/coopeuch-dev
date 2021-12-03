@@ -2,13 +2,18 @@
 
 Este es un programa demo para Coopeuch.
 ### Prerequisitos:
-  - Acceso a una BD relacional (Mysql, Postgres, etc). En este caso, fue realizado con una BD Postgresql versión 13.
+  - Acceso a una BD en Postgres versión 13.
   - Java versión 11 (este fue probado con la versión de AWS Corretto, pero podría ser de Sun u Openjdk).
   - Maven versión 3.8.x
 
 Para levantar este proyecto de prueba, es necesario:
 - Ejecutar el script adjunto en la carpeta "sql", directo en la base de datos. Con esto queda creada la tabla.
 - Descargar el proyecto (git clone)
+- Modificar el archivo "application.properties" para configurar la base de datos correcta asi como las credenciales de acceso.
+
+![imagen](https://user-images.githubusercontent.com/4118340/144622650-30d84d17-932a-4e4a-9c2d-6fbe8747c18b.png)
+
+
 - Si se utiliza Visual Studio Code:
 
 * Hacer un "update" de maven
