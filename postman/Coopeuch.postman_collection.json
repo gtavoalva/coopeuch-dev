@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "62483007-1bd9-4cdd-a4d0-fbd92baed1a8",
+		"name": "Coopeuch",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listar",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{BE_SERVER_URL}}:5000/api/v1/tarea/",
+					"protocol": "http",
+					"host": [
+						"{{BE_SERVER_URL}}"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"tarea",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar Tarea",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"identificador\": 1234567,\n    \"descripcion\": \"tarea 1\",\n    \"fechaCreacion\": \"2021-12-03T09:36:00.303Z\",\n    \"vigente\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{BE_SERVER_URL}}:5000/api/v1/tarea/",
+					"protocol": "http",
+					"host": [
+						"{{BE_SERVER_URL}}"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"tarea",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Tarea",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"identificador\": 333,\n    \"descripcion\": \"tarea 99\",\n    \"fechaCreacion\": \"2021-12-03T09:36:00.303Z\",\n    \"vigente\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{BE_SERVER_URL}}:5000/api/v1/tarea/78945",
+					"protocol": "http",
+					"host": [
+						"{{BE_SERVER_URL}}"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"tarea",
+						"78945"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Tarea",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://{{BE_SERVER_URL}}:5000/api/v1/tarea/1234",
+					"protocol": "http",
+					"host": [
+						"{{BE_SERVER_URL}}"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"tarea",
+						"1234"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

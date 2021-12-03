@@ -1,0 +1,54 @@
+{
+    "properties": [
+        {
+            "name": "swagger.api.contact.email",
+            "type": "java.lang.String",
+            "description": "A description for 'swagger.api.contact.email'"
+        },
+        {
+            "name": "swagger.api.contact.url",
+            "type": "java.lang.String",
+            "description": "A description for 'swagger.api.contact.url'"
+        },
+        {
+            "name": "swagger.api.contact.name",
+            "type": "java.lang.String",
+            "description": "A description for 'swagger.api.contact.name'"
+        },
+        {
+            "name": "swagger.api.controller.basepackage",
+            "type": "java.lang.String",
+            "description": "A description for 'swagger.api.controller.basepackage'"
+        },
+        {
+            "name": "swagger.api.version",
+            "type": "java.lang.String",
+            "description": "A description for 'swagger.api.version'"
+        },
+        {
+            "name": "swagger.api.license.url",
+            "type": "java.lang.String",
+            "description": "A description for 'swagger.api.license.url'"
+        },
+        {
+            "name": "swagger.api.license",
+            "type": "java.lang.String",
+            "description": "A description for 'swagger.api.license'"
+        },
+        {
+            "name": "swagger.api.terms_of_service_url",
+            "type": "java.lang.String",
+            "description": "A description for 'swagger.api.terms_of_service_url'"
+        },
+        {
+            "name": "swagger.api.description",
+            "type": "java.lang.String",
+            "description": "A description for 'swagger.api.description'"
+        },
+        {
+            "name": "swagger.api.title",
+            "type": "java.lang.String",
+            "description": "A description for 'swagger.api.title'"
+        }
+    ]
+}
