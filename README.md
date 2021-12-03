@@ -6,6 +6,9 @@ Este es un programa demo para Coopeuch.
   - Java versión 11 (este fue probado con la versión de AWS Corretto, pero podría ser de Sun u Openjdk).
   - Maven versión 3.8.x
 
+### Importante:
+  - El eliminado es sólo lógico en BD, es decir, solo se cambia el estado "vigente" a "false".
+
 Para levantar este proyecto de prueba, es necesario:
 - Ejecutar el script adjunto en la carpeta "sql", directo en la base de datos. Con esto queda creada la tabla.
 - Descargar el proyecto (git clone)
