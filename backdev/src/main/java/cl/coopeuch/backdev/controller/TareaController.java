@@ -32,7 +32,7 @@ public class TareaController {
         } catch (RuntimeException rException) {
             return ResponseEntity.status(HttpStatus.CONFLICT).body(listado);
         }
-        
+
         log.info("listar ok: " + listado.size());
         return ResponseEntity.ok(listado);
     }
@@ -40,13 +40,17 @@ public class TareaController {
     @RequestMapping(value = "/", method = RequestMethod.POST)
     public ResponseEntity<String> agregar(@RequestBody Tarea tarea) {
         log.info("agregar");
-        if (tarea != null && tarea.getIdentificador() != null && tarea.getIdentificador().intValue() > 0
-                && tarea.getDescripcion().trim().length() > 0 && tarea.getFechaCreacion() != null
-                && tarea.getVigente() != null) {
-            service.agregar(tarea);
-        } else {
-            return ResponseEntity.status(HttpStatus.BAD_REQUEST)
-                    .body("Campos Identificador, descripción, fecha creación y vigente, son obligatorios");
+        try {
+            if (tarea != null && tarea.getIdentificador() != null && tarea.getIdentificador().intValue() > 0
+                    && tarea.getDescripcion().trim().length() > 0 && tarea.getFechaCreacion() != null
+                    && tarea.getVigente() != null) {
+                service.agregar(tarea);
+            } else {
+                return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+                        .body("Campos Identificador, descripción, fecha creación y vigente, son obligatorios");
+            }
+        } catch (RuntimeException rException) {
+            return ResponseEntity.status(HttpStatus.CONFLICT).body(rException.getMessage());
         }
 
         log.info("agregar ok");
