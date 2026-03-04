@@ -4,7 +4,7 @@ metadata:
   name: servicio-notificaciones
   description: Envío de correos electrónicos y push notifications asíncronos.
   annotations:
-    github.com/project-slug: mi-organizacion/repo-servicio-notificaciones
+    github.com/project-slug: gtavoalva/coopeuch-dev
     backstage.io/techdocs-ref: dir:.
   tags:
     - python
