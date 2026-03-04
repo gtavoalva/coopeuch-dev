@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: servicio-notificaciones
+  description: Envío de correos electrónicos y push notifications asíncronos.
+  annotations:
+    github.com/project-slug: mi-organizacion/repo-servicio-notificaciones
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - python
+    - celery
+    - async
+  links:
+    - title: Queue Monitor
+      url: https://rabbitmq.mi-empresa.com
+spec:
+  type: service
+  lifecycle: production
+  owner: equipo-comunicaciones
+  system: plataforma-ecommerce
+  # Sin dependencias directas a otros componentes internos en este ejemplo
+  dependsOn: []
